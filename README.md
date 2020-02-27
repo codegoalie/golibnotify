@@ -2,7 +2,9 @@
 
 `golibnotify` implements go bindings for
 [`libnotify`](https://developer.gnome.org/libnotify/unstable/) to create, send,
-and update OS level notifications.
+and update OS level notifications. It does not shell out to `notify-send` so it
+can update existing notifications as well as create new ones.
+
 
 ## Installation
 
