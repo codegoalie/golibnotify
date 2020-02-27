@@ -1,5 +1,5 @@
 // Package golibnotify implements go bindings for libnotify to create, send, and
-// update OS level notifications. It does not shell out to notify-send so it can
+// update OS level notifications. It does not shell out to `notify-send` so it can
 // update existing notifications as well as create new ones.
 //
 // This package requires CGO and the libnotify (libnotify-dev) shared library
@@ -23,11 +23,11 @@ import (
 // SimpleNotifier is an instance of an application sending notifications
 type SimpleNotifier struct {
 	appName      string
-	notification Notification
+	notification notification
 }
 
-// Notification is an instance of a particular notification
-type Notification *C.NotifyNotification
+// notification is an instance of a particular notification
+type notification *C.NotifyNotification
 
 // NewSimpleNotifier initializes a new application to send notifications
 func NewSimpleNotifier(applicationName string) *SimpleNotifier {
@@ -74,18 +74,18 @@ func (n *SimpleNotifier) Close() error {
 	return close(n.notification)
 }
 
-func show(notification Notification) error {
+func show(notif notification) error {
 	var cErr **C.GError
-	C.notify_notification_show(notification, cErr)
+	C.notify_notification_show(notif, cErr)
 	if cErr != nil {
 		return errors.New(C.GoString((*cErr).message))
 	}
 	return nil
 }
 
-func close(notification Notification) error {
+func close(notif notification) error {
 	var cErr **C.GError
-	C.notify_notification_close(notification, cErr)
+	C.notify_notification_close(notif, cErr)
 	if cErr != nil {
 		return errors.New(C.GoString((*cErr).message))
 	}
