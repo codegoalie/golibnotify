@@ -1,3 +1,12 @@
+// Package golibnotify implements go bindings for libnotify to create, send, and
+// update OS level notifications. It does not shell out to notify-send so it can
+// update existing notifications as well as create new ones.
+//
+// This package requires CGO and the libnotify (libnotify-dev) shared library
+// to be installed.
+//
+// On Ubuntu or Debian using apt, you can install with:
+// sudo apt-get install libnotify-dev
 package golibnotify
 
 /*
