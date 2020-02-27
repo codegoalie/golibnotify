@@ -29,3 +29,25 @@ err = notifier.Close()
 ```
 
 See also [examples](https://github.com/codegoalie/golibnotify/examples) for a complete example
+
+## Roadmap
+
+- [ ] Add API that returns a Notification instance to manage multiple notifications at once
+- [ ] Better support for notification icons (PixBuf?)
+- [ ] Support notification timeouts
+- [ ] Support notification urgencies
+
+## Contributions
+
+Thanks for wanting to contribute!
+
+1. Open an issue describing your problem, solution, issue, suggestion, feature,
+etc. to ensure it's likely to get merged.
+1. Fork the project.
+1. Make your changes.
+1. Open a PR against `master` here.
+1. Celebrate being awesome!
+
+## Author
+
+[@codegoalie](https://codegoalie.com)
