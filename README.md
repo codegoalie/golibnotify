@@ -5,9 +5,9 @@
 and update OS level notifications. It does not shell out to `notify-send` so it
 can update existing notifications as well as create new ones.
 
-![GitHub](https://img.shields.io/github/license/codegoalie/golibnotify?style=flat-square)
-[![Go Report Card](https://goreportcard.com/badge/github.com/codegoalie/golibnotify)](https://goreportcard.com/report/github.com/codegoalie/golibnotify)
 [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/codegoalie/golibnotify?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/codegoalie/golibnotify)](https://goreportcard.com/report/github.com/codegoalie/golibnotify)
+![GitHub](https://img.shields.io/github/license/codegoalie/golibnotify?style=flat-square)
 
 ## Installation
 
