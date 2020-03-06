@@ -8,6 +8,7 @@ can update existing notifications as well as create new ones.
 [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/codegoalie/golibnotify?tab=doc)
 [![Go Report Card](https://goreportcard.com/badge/github.com/codegoalie/golibnotify)](https://goreportcard.com/report/github.com/codegoalie/golibnotify)
 ![GitHub](https://img.shields.io/github/license/codegoalie/golibnotify?style=flat-square)
+[![Sourcegraph Badge](https://sourcegraph.com/github.com/codegoalie/golibnotify/-/badge.svg)](https://sourcegraph.com/github.com/codegoalie/golibnotify?badge)
 
 ## Installation
 
